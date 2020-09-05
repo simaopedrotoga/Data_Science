@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+
+	<html lang="pt">
+
+		<head>
+
+			<title>Observatório da Ciência da Informação</title>
+
+			<link rel="shortcut icon" href="images/logotipo.jpg" type="image/x-jpg"/>
+
+			<link rel="stylesheet" type="text/css" href="up201704685.css"/>
+
+		</head>
+
+		<body>
+
+			<div>
+
+				<section class="primeiro">
+
+					<input type="checkbox" id="bt_menu">
+
+					<label for="bt_menu">&#9776;</label>
+
+					<h1 class="segundo">Seja Bem-Vindo!</h1>
+
+					<form class="pesquisa">
+					
+						<input type="search" id="texto" list="histórico" placeholder="Pesquisar">
+
+						<img src="images/lupa.png" class="btn" alt="Lupa" onclick="executar()">
+
+						<datalist id="histórico">
+							
+							<option value="Observatório"></option>
+
+							<option value="Brochuras"></option>
+
+							<option value="Destaques"></option>
+
+							<option value="Estatísticas"></option>
+
+							<option value="DELTCI"></option>
+
+							<option value="Jornadas"></option>
+
+							<option value="Perfis"></option>
+
+							<option value="ALUMNI"></option>
+
+
+						</datalist>
+
+					<script>
+						
+						function executar() {
+							var texto=document.getElementById('texto').value;
+							var lista=document.getElementById('histórico');
+							var adicionar=true;
+							var opt=document.createElement('option');
+						
+
+						for(i=0; i<lista.options.length; i++){
+							if(texto==lista.options[i].value){
+								adicionar=false;
+							}
+						}
+
+						if (adicionar==true) {
+							opt.value=texto;
+							lista.appendChild(opt);
+						}
+
+						}
+
+					</script>	
+
+					</form>
+
+				</section>
+
+					<nav class="menu">
+
+						<ul>
+					
+							<li><a href="#zona1">OCI</a></li>
+
+							<li><a href="#zona2">Brochuras/Flyers</a></li>
+
+							<li><a href="#">Destaques</a>
+
+								<ul>
+								
+									<li><a href="#zona3">Jornadas</a></li>
+
+									<li><a href="#zona4">Perfis</a></li>
+
+									<li><a href="#zona5">ALUMNI</a></li>
+
+
+								</ul>
+
+							</li>
+
+							<li><a href="#">Estatísticas</a></li>
+
+							<li><a href="#">DELTCI</a></li>
+
+						</ul>
+
+					</nav>
+
+			</div>
+
+				<section class="primeiro">
+
+					<video class="terceiro" src="videos/observatorio.mp4" autoplay="" controls="" loop=""></video>
+
+				</section>
+
+				<section class="quarto_quinto_sexto">
+
+					<h1><strong>O que é o Observatório de Ciência da Informação?</strong></h1>
+
+						<p class="setimo">Um observatório constitui um instrumento de controlo, avaliação e divulgação de informação sobre uma determinada temática que visa estimular a colaboração entre os recetores e agentes. É apresentado o Observatório de Ciência da Informação da Universidade do Porto (OCIUPorto), desenvolvido por estudantes no âmbito da unidade curricular de Gestão de Serviços de Informação, do 3º ano da Licenciatura em Ciência da Informação (LCI), através de equipas constituídas anualmente com a responsabilidade da sua gestão e melhoria contínua. É uma plataforma de colaboração e comunicação que integrou os licenciados, mestres e doutores em CI na U.Porto, uma componente pedagógica, corporizada no DELTCI - Dicionário de Terminologia em Ciência da Informação, e de orientação profissional, com o caderno de Perfis Profissionais em CI, suportando hoje uma vasta comunidade online sediada no sistema de informação da U.Porto e com extensões nas diversas redes sociais.</p>
+
+				</section>
+
+				<section class="oitavo">
+
+					<h1 class="nono"><strong>Principais Objetivos</strong></h1>
+
+						<p><a href='#'><img src="images/capacitar.jpg" width="256" height="186" alt="Capacitar"></a>
+						
+						<a href='#'><img src="images/investigar.jpg" width="256" height="186" alt="Investigar"></a>
+						
+						<a href='#'><img src="images/ser_profissional.jpg" width="256" height="186" alt="Ser Profissional"></a></p>
+						
+						<p><a href='#'><img src="images/cooperar.jpg" width="256" height="186" alt="Cooperar"></a>
+						
+						<a href='#'><img src="images/comunicar.jpg" width="256" height="186" alt="Comunicar"></a>
+						
+						<a href='#'><img src="images/ser_empreendedor.jpg" width="256" height="186" alt="Ser empreendedor"></a></p>
+
+				</section>
+
+			<div class="decimo-quinto">
+				
+					<h1 class="decimo"><strong>Testemunhos</strong></h1>
+
+						<section class="decimo-primeiro">
+
+							<p>“Hoje o Observatório permite uma outra percepção da LCI. Com este projecto faculta-se uma perspectiva muito concreta do que é este curso e como ele pode ser importante no futuro dos licenciados e outros graduados em CI. O simples facto de um estudante poder ter acesso aos antigos estudantes e partilhar as suas experiências e perspectivas de futuro, saber quais os locais possíveis para uma mobilidade, um estágio ou mesmo emprego, estar a par das iniciativas proporcionadas pelo curso e pelos estudantes e aceder aos principais meios de disseminação de informação, é sempre uma mais-valia para reforçar a «Comunidade CI».”(Castro, António e outros, 2011)</p>
+
+						</section>
+
+						<section class="decimo-segundo">
+
+							<p>“A célere evolução da Sociedade da Informação exigia mais do que o MGI oferecia, sendo essa lacuna preenchida com a introdução do MCI. Um novo plano de estudos, novos objectivos, mais competências e uma componente tecnológica muito forte que coloca o MCI em franca ascensão desde que o MGI cessou, em 2006/2007.”(Castro, António e outros, 2011)</p>
+
+						</section>
+
+						<section class="decimo-terceiro">
+
+							<p>Os licenciados em CI valorizam as competências ligadas às Tecnologias de Informação e Comunicação no desempenho presente da sua actividade profissional, posicionando-se competências como Gestão de Projectos entre as competências de Gestão da Informação e as de Gestão de Conteúdos.”(Castro, António e outros, 2011)</p>
+
+						</section>
+
+						<section class="decimo-quarto">
+
+							<p>“Desde cedo a LCI estabeleceu vários protocolos e programas que visavam a mobilidade tanto de docentes como de estudantes. O Programa Erasmus já mobilizou cerca de 26 estudantes até ao ano lectivo de 2009/2010, sendo que 18 são estudantes da LCI que optaram por um ciclo de estudos fora da Universidade do Porto e os restantes são estudantes estrangeiros que receberam formação académica no âmbito da LCI. Até ao ano de 2010/2011 a LCI estabeleceu acordos com 17 universidades de 12 países no âmbito do Programa Erasmus.”(Castro, António e outros, 2011)</p>
+
+						</section>
+
+			</div>
+
+			<div class="decimo-sexto">
+
+				<h1 class="decimo-setimo"><strong>Interesses</strong></h1>
+
+					<section class="circulo">
+
+						<h2 id="zona1"><a href='201704685.html'>OCI</a></h2>
+
+					</section>
+
+					<section class="circulo_1">
+						
+						<h2 id="zona2"><a href='201704685_2.html'>Brochuras</a></h2>
+
+					</section>
+
+					<section class="circulo_2">
+						
+						<h2><a href='#'>Destaques</a></h2>
+
+					</section>
+
+					<section class="circulo_3">
+						
+						<h2><a href='#'>Estatísticas</a></h2>
+
+					</section>
+
+					<section class="circulo_4">
+						
+						<img class="imagem" src="images/deltci.jpg" alt="Logótipo DeltCI" width="120" height="80">
+
+					</section>
+
+			</div>
+
+			<div class="decimo-oitavo">
+				
+				<h1 class="decimo-nono"><strong>Áreas a Explorar</strong></h1>
+
+					<section class="circulo_5">
+
+						<img src="images/jornadas.jpg" alt="Jornadas" class="imagem_1">
+						
+						<h2 id="zona3"><a href='#'>Jornadas</a></h2>
+
+					</section>
+
+					<section class="circulo_6">
+
+						<img src="images/cientista.png" alt="Cientista" class="imagem_2">
+						
+						<h2 id="zona4"><a href='#'>Perfis</a></h2>
+
+					</section>
+
+					<section class="circulo_7">
+
+						<img src="images/alumni.jpeg" alt="ALUMNI" class="imagem_3">
+						
+						<h2 id="zona5"><a href='#'>ALUMNI</a></h2>
+
+					</section>
+
+			</div>
+
+				<section class="vigesimo_vigesimo-primeiro">
+
+					<h1><strong>Compartilhe a Experiência</strong></h1>
+
+					<p><a href="https://www.linkedin.com/in/ci-uporto-84358066"><img class="vigesimo-segundo" src="images/linkedin.png" alt="Logótipo do LinkedIn" width="300" height="300"></a></p>
+
+					<p><a href="https://www.facebook.com/pages/Observat%C3%B3rio-de-Ci%C3%AAncia-da-Informa%C3%A7%C3%A3o/226351070805981?fref=ts"><img class="vigesimo-terceiro" src="images/facebook.png" alt="Logótipo do Facebook" width="300" height="300"></a></p>
+
+					<p><a href="https://twitter.com/Observatorio_CI"><img class="vigesimo-quarto" src="images/twitter.png" alt="Logótipo do Twitter" width="300" height="300"></a></p>
+
+				</section>
+
+				<section class="vigesimo-sexto">
+
+					<h1 class="vigesimo-quinto">Organizações</h1>
+
+						<p><a href="#"><img class="vigesimo-setimo" src="images/lci_mci.jpg" alt="Logótipo LCI e MCI" width="450" height="180"></a></p>
+
+						<p><a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class="vigesimo-oitavo" src="images/logotipo_feup.jpg" alt="Logótipo da FEUP" width="450" height="180"></a></p>
+
+						<p><a href="https://sigarra.up.pt/flup/pt/web_page.inicial"><img class="vigesimo-nono" src="images/logotipo_flup.jpg" alt="Logótipo da FLUP" width="450" height="180"></a></p>
+
+						<img class="trigesimo" src="images/rodape.png" alt="Outros">
+
+				</section>
+
+		</body>
+
+	</html>

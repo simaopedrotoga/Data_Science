@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+
+	<html lang="pt">
+
+		<head>
+
+ 			<title>Brochuras/Flyers</title>
+
+ 			<link rel="shortcut icon" href="images/logotipo.jpg" type="image/x-jpg"/>
+
+ 			<link rel="stylesheet" type="text/css" href="up201704685.css"/>
+ 
+		</head> 
+
+		<body> 
+
+			<div>
+
+				<section class="primeiro">
+
+					<input type="checkbox" id="bt_menu">
+
+					<label for="bt_menu">&#9776;</label>
+
+					<h1 class="segundo_1"></h1>
+
+					<form class="pesquisa">
+					
+						<input type="search" id="texto" list="histórico" placeholder="Pesquisar">
+
+						<img src="images/lupa.png" class="btn" alt="Lupa" onclick="executar()">
+
+						<datalist id="histórico">
+							
+							<option value="Observatório"></option>
+
+							<option value="Brochuras"></option>
+
+							<option value="Destaques"></option>
+
+							<option value="Estatísticas"></option>
+
+							<option value="DELTCI"></option>
+
+							<option value="Jornadas"></option>
+
+							<option value="Perfis"></option>
+
+							<option value="ALUMNI"></option>
+
+
+						</datalist>
+
+					<script>
+						
+						function executar() {
+							var texto=document.getElementById('texto').value;
+							var lista=document.getElementById('histórico');
+							var adicionar=true;
+							var opt=document.createElement('option');
+						
+
+						for(i=0; i<lista.options.length; i++){
+							if(texto==lista.options[i].value){
+								adicionar=false;
+							}
+						}
+
+						if (adicionar==true) {
+							opt.value=texto;
+							lista.appendChild(opt);
+						}
+
+						}
+
+					</script>	
+
+					</form>
+
+				</section>
+
+					<nav class="menu">
+
+						<ul>
+					
+							<li><a href="#zona1">OCI</a></li>
+
+							<li><a href="#zona2">Brochuras/Flyers</a></li>
+
+							<li><a href="#">Destaques</a>
+
+							<ul>
+							
+								<li><a href="#zona3">Jornadas</a></li>
+
+								<li><a href="#zona4">Perfis</a></li>
+
+								<li><a href="#zona5">ALUMNI</a></li>
+
+
+							</ul>
+
+							</li>
+
+							<li><a href="#">Estatísticas</a></li>
+
+							<li><a href="#">DELTCI</a></li>
+
+						</ul>
+
+					</nav>
+
+			</div>
+
+			<div class="trigesimo-primeiro">
+
+				<header>
+
+ 					<h1 class="trigesimo-quinto"><strong>Brochuras/Flyers</strong></h1>
+
+				</header>
+
+				<section class="trigesimo-segundo">
+
+ 					<a href='http://ciuporto.up.pt/images/BLCI1617.pdf'><h2>LICENCIATURA</h2></a>
+
+ 					<img src='images/lci.jpg' width="200" height="160" alt="LCI">
+					<p>Ao abrir em 2001/2002 a primeira Licenciatura em Ciência da Informação, a Universidade do Porto pretendeu garantir uma formação adequada à nova realidade da Sociedade da Informação em que os gestores de informação e de serviços de informação, os administradores de dados e sistemas de informação e, ainda, os profissionais dos arquivos e das bibliotecas desenvolvem a sua atividade. Curso conjunto com a Faculdade de Engenharia da Universidade do Porto (FEUP).</p>
+
+				</section>
+
+				<section class="trigesimo-terceiro">
+
+ 					<a href='201704685_3.html'><h2>MESTRADO</h2></a>
+
+ 					<img src='images/mci.jpg' width="200" height="160" alt="MCI">
+
+					<p>O Mestrado em Ciência da Informação tem como objetivo formar especialistas com competências técnicas e sociais que os habilitam a liderar projetos e iniciativas no domínio da Gestão da Informação nas organizações. Curso conjunto com a Faculdade de Letras da Universidade do Porto (FLUP)</p>
+
+				</section>
+
+				<section class="trigesimo-quarto">
+
+ 					<a href='https://paginas.fe.up.pt/~lci/images/ICPD.pdf'><h2>DOUTORAMENTO</h2></a>
+
+					<p>O programa Doutoral em Informação e Comunicação em Plataformas Digitais é lecionado, em parceria, pela Universidade de Aveiro/Departamento de Comunicação e Arte e pela Universidade do Porto/Faculdade de Letras, sendo, maioritariamente, composto por investgadores da unidade de IeD CETAC.MEDIA - Centro de Estudos das Tecnologias e Ciências da Comunicação.
+					Este programa doutoral visa possibilitar o aprofundamento de conhecimentos a um nível pós-graduado avançado, bem como o desenvolvimento de competências de investigação autónoma na área da informação em cenários de mediação tecnológica.</p>
+
+				</section>
+
+			</div>
+
+				<section class="vigesimo-sexto">
+
+					<h1 class="vigesimo-quinto"><strong>Organizações</strong></h1>
+
+						<p><a href="https://paginas.fe.up.pt/~lci/"><img class="vigesimo-setimo" src="images/lci_mci.jpg" alt="Logótipo LCI e MCI" width="450" height="180"></a></p>
+
+						<p><a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class="vigesimo-oitavo" src="images/logotipo_feup.jpg" alt="Logótipo da FEUP" width="450" height="180"></a></p>
+
+						<p><a href="https://sigarra.up.pt/flup/pt/web_page.inicial"><img class="vigesimo-nono" src="images/logotipo_flup.jpg" alt="Logótipo da FLUP" width="450" height="180"></a></p>
+
+						<img class="trigesimo_1" src="images/rodape.png" alt="Outros">
+
+				</section>
+
+		</body>
+
+	</html>
